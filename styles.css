@@ -1,0 +1,108 @@
+/* styles.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+    animation: bounce-in-top 1s both;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #666;
+    margin: 20px 0;
+}
+
+main {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.team {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.member {
+    text-align: center;
+    width: 150px;
+}
+
+.member img {
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #333;
+}
+
+.member .name {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.play-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.play-button:hover {
+    background-color: #0056b3;
+}
+
+@keyframes bounce-in-top {
+    0% {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
